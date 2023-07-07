@@ -26,28 +26,59 @@ class Program
 
         // !For Loop
 
-        int forNumber = 0;
-        for (forNumber = 0; forNumber < 5; forNumber++)
+
+        for (int forNumber = 1; forNumber < 5; forNumber++)
         {
-            Console.WriteLine(forNumber);
-            Console.WriteLine(" second");
+            Console.Write(forNumber);
+            Console.WriteLine(" seconds");
         }
         //
 
-            Console.WriteLine("Enter how mony times display hello");
-            int hello = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter how many times should display hello");
+        int hello = int.Parse(Console.ReadLine());
 
-            int helloooo = 0;
 
-        for (helloooo = 0; hello > helloooo; helloooo++)
+        for (int helloooo = 0; hello > helloooo; helloooo++)
         {
-            Console.WriteLine("hello");
+            Console.WriteLine("hello again");
         }
 
+        // !Do while
 
+        int ten = 10;
+
+        do
+        {
+            Console.WriteLine("What's up?");
         }
+        while (ten > 15);
+
+        // Next task
+
+        Console.WriteLine("Type againg to hello one more time!");
+
+        string helloAgain;
+        do
+        {
+            Console.WriteLine("Hello");
+            helloAgain = Console.ReadLine();
+            
+        }
+        while (helloAgain == "again");
+              
+
+
+
+
+
+
 
     }
+
+
+
+    }
+
 
 
 
