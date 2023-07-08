@@ -24,7 +24,7 @@ class Program
         }
         Console.WriteLine("Result is {0}", sumResult);
 
-        // !For Loop
+        //// !For Loop
 
 
         for (int forNumber = 1; forNumber < 5; forNumber++)
@@ -32,9 +32,9 @@ class Program
             Console.Write(forNumber);
             Console.WriteLine(" seconds");
         }
-        //
 
-        Console.WriteLine("Enter how many times should display hello");
+
+        Console.WriteLine("Enter how many times \"hello\" should display ");
         int hello = int.Parse(Console.ReadLine());
 
 
@@ -62,16 +62,25 @@ class Program
         {
             Console.WriteLine("Hello");
             helloAgain = Console.ReadLine();
-            
+
         }
         while (helloAgain == "again");
-              
 
 
+        //!Nested Loops
+        //* square
 
+        int rowColumns = 10;
 
-
-
+        for (int m = 0; m < rowColumns; m++)
+        {
+            for (int n = 0; n < rowColumns; n++)
+            {
+                Console.Write("{0,3}", "*");
+            }
+            Console.WriteLine();
+        }
+        
 
     }
 
